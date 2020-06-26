@@ -32,10 +32,10 @@ class News extends Component{
             .catch(error=>console.log(error)) //to catch the errors if any
     }
     componentDidMount(){
+      /*  add new text*/
         this.interval = setInterval(() => {
           this.fetch()
         }, 100);
-
     }
     renderItem(route){
         const data=route.item
