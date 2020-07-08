@@ -38,11 +38,11 @@ class Pagination extends Component{
             .catch(error=>console.log(error)) //to catch the errors if any
     }
     componentDidMount(){
-          console.log("componentDidMount")
-         this.ApiCall()
-       /* this.interval = setInterval(() => {
+         /* console.log("componentDidMount")
+         this.ApiCall()*/
+        this.interval = setInterval(() => {
             this.ApiCall()
-        }, 1000);*/
+        }, 1000);
     }
 
     renderItem(route){
